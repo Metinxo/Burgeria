@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGERIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="onPageLoad()">
+    <header>
+        <div class="logo-container">
+            <img class="logo-pic" src="img/burgericon.ico">
+            <div class="logo-text"><b>BURGERIA</b></div>
+        </div>
+        </div>
+        <div class="header-title"> <img class="local" src="img/lo.png"><b>ALLERSBERGERSTR.86 90461 NÜRNBERG</b></div>
+        <nav>
+            <img class="icon" src="img/german.png">
+            <img class="icon" src="img/menu.ico">
+        </nav>
+    </header>
+
+
+    <div class="content-container">
+        <div class="restaurant-container">
+            <img class="burger-pic" src="img/burger.jpg">
+            <h1>BURGERIA</h1>
+        <div class="render-content" id="content"></div>
+        <button id="mobilebasket" title="Zum Warenkorb" onclick="showBasket()" class="mobile-button"><b>Warenkorb öffnen</b></button>
+    </div>
+    <div id="overlay-basket" class="basket-container">
+        <img title="Warenkorb schliessen" src="img/xmark.ico" onclick="closeBasket()" class="close-icon">
+        <div class="basket-title"><b>Warenkorb</b></div>
+
+        <div class="render-basket" id="basket"></div>
+        <div class="basket-sum" id="sum"></div>
+        <div id="payment" class="pay-message display-none">
+            <div id="successfull">Vielen Dank für Ihre Bestellung!</div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <footer>
+        <div>© 2022 BURGERIA</div>
+        <div>AGB</div>
+        <div>Datenschutzerklärung</div>
+        <div>Impressum</div>
+    </footer>
+
+
+</body>
+
+</html>
